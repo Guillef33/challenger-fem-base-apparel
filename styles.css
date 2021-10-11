@@ -1,0 +1,176 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+
+
+
+  .content {
+    display: grid;
+    
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0em 8em;
+    justify-content: space-around;
+    background: linear-gradient(135deg, #FFFFFF, #FFF5F5);
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .logo-section-mobile {
+    display: none;
+  }
+
+  .description {
+    padding: 1em 12em 1em 0em;
+    line-height: 1.5em;
+    color: gray;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+    width: 500px;
+    letter-spacing: 0.3em;  
+  }
+  #formLogin{
+    min-height: 80px;
+  }
+  .image-container {
+    background-image: url(images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .button-wrapper {
+    display: flex;
+  }
+
+  .button-wrapper input {
+    width: 300px;
+    padding: 1em;
+    border-radius: 30px;
+    border: 1px solid #F0F0F0;
+  }
+
+  /* #inputEmail::after{
+    content: url(images/icon-error.svg);
+    width: 100px;
+    height: 100px;
+  } */
+
+  #errorEmail {
+    font-size: 12px;
+  padding: 10px 20px;
+  color: red;
+}
+
+
+  #error-image {
+    position: absolute;
+    top: 10px;
+    left: 230px;
+    display: none;
+  }
+
+  .button-form {
+    background: linear-gradient(135deg, #F8BFBF, #EE8C8C);
+    padding: 10px 30px;
+    right: -45px;
+    position: absolute;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+  }
+
+  .submit-wrapper {
+    position: relative;
+    
+  }
+
+  
+  .button-wrapper ::placeholder {
+  color: gray;
+  padding: 0em 1em;
+  }
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+  @media (max-width: 760px) {
+    .container {
+      grid-template-columns: 1fr;
+  
+    }
+
+    .content {
+      display: flex;
+      flex-flow: column-reverse;
+
+    }
+
+    .logo {
+      width: 100px;
+    }
+
+    .logo-section-mobile {
+      display: block;
+      width: 100%;
+      padding: 2em;
+    }
+
+    .logo-section {
+      display: none;
+    }
+
+    .main-section {
+      padding: 1em;
+    }
+
+    .image-container {
+      height: 70vh;
+    }
+
+    .title-section {
+      margin: 20px 0px;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 40px;
+      width: auto;
+      text-align: center;
+    }
+
+    .description {
+      padding: 1em;
+      text-align: center;
+    }
+
+    #formLogin {
+      margin: 0px 50px;
+    }
+  
+    .button-wrapper input {
+      width: 200px !important;
+    }
+  
+    #error-image {
+      left: 140px;
+    }
+  
+    .logo {
+      width: 200px;
+    }
+  }
